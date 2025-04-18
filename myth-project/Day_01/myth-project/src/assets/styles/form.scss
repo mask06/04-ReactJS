@@ -1,0 +1,41 @@
+form{
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 0 10px 50px 10px;
+    border-radius: 15px;
+    border: 1px solid #FFD460;
+    position: relative;
+    input,select,textarea,option{
+        display: block;
+        width: 100%;
+        padding: 5px 2px;
+        font-family: monospace;
+        color: grey;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #FFD460;
+    }
+    input[type="submit"]{
+        width: 100px;
+        position: absolute;
+        right: 10px;
+        border: 1px solid #FFD460;
+        background: transparent;
+        color: #FFD460;
+        cursor: pointer;
+        transition: .6s;
+        &:hover{
+            background: #FFD460;
+            color: #2D4059;
+            box-shadow: 3px 3px 10px #2D4059;
+        }
+    }
+    textarea{
+        height: 150px;
+    }
+    // ::placeholder{}
+    :focus{
+       outline: 3px solid #F07B3F; 
+    }
+}
